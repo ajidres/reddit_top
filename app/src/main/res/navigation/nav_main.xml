@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/feedDetailFragment">
+
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.ajidres.myapplication.features.start.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.ajidres.myapplication.features.feed.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feedFragment_to_feedDetailFragment"
+            app:destination="@id/feedDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedDetailFragment"
+        android:name="com.ajidres.myapplication.features.feed_detail.FeedDetailFragment"
+        android:label="fragment_feed_detail"
+        tools:layout="@layout/fragment_feed_detail"/>
+    <fragment
+        android:id="@+id/stateFragment"
+        android:name="com.ajidres.myapplication.features.state.StateFragment"
+        android:label="fragment_state"
+        tools:layout="@layout/fragment_state" />
+
+    <action android:id="@+id/moveToStateFragment"
+        app:destination="@id/stateFragment"/>
+
+
+</navigation>

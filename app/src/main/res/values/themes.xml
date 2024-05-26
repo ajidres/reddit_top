@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Reddittest" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/orange</item>
+        <item name="android:colorPrimaryDark">@color/orange</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+</resources>
